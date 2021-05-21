@@ -13,17 +13,45 @@
     <title>Aplicación Netnet</title>
   </head>
   <body>
-    <div class="contenedor">
-      <header>
+    <header>
+      <div class="contenedor">
         <img src="./images/logo-netnet.png" alt="Logotipo Netnet" />
         <nav>
-          <a href="#">Series</a>
+          <a href="#" class="activo">Series</a>
           <a href="#">Películas</a>
           <a href="#">Mi lista</a>
         </nav>
-      </header>
-    </div>
+        <div class="contenedor-buscar">
+          <form>
+            <input type="text" placeholder="Búsqueda..." name="buscar" />
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="pelicula-principal">
+        <div class="contenedor">
+          <h3 class="titulo-principal">Matrix</h3>
+          <p class="descripcion">
+            Un hacker informático aprende de misteriosos rebeldes la verdadera
+            naturaleza de su realidad y su papel en la guerra contra sus
+            controladores.
+          </p>
+          <button role="button" class="boton">
+            <i class="fas fa-play"></i>Reproducir
+          </button>
+          <button role="button" class="boton">
+            <i class="fas fa-info-circle"></i>Más información
+          </button>
+        </div>
+      </div>
+    </main>
 
+    <script
+      src="https://kit.fontawesome.com/68a8eae582.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="/scripts/index.js"></script>
   </body>
 </html>

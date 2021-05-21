@@ -19,3 +19,90 @@ body {
   width: 90%;
   margin: auto;
 }
+
+header {
+  padding: 30px 0;
+}
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #d1d1d1;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+header nav a:hover,
+header nav a.activo {
+  color: #ffffff;
+}
+
+header input[type="text"] {
+  padding: 6px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  border: 1px solid rgb(221, 15, 15);
+}
+
+/* ---- ---- ---- Película principal ---- ---- ---- */
+
+.pelicula-principal {
+  font-size: 16px;
+  min-height: 40.62em;
+  color: #ffffff;
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%),
+    url(../images/bg-matrix-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 3.12em;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pelicula-principal .contenedor {
+  margin: 0 auto;
+  margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo-principal {
+  font-weight: 700;
+  font-size: 3.12em;
+  margin-bottom: 0.9em;
+}
+
+.pelicula-principal .descripcion {
+  font-weight: normal;
+  font-size: 1.125em;
+  line-height: 1.75em;
+  max-width: 50%;
+  margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 0.18em;
+  padding: 0.93em 1.87em;
+  color: #000000;
+  margin-right: 1.125em;
+  cursor: pointer;
+  transition: 0.3s ease all;
+  font-size: 1.125em;
+}
+
+.pelicula-principal .boton:hover {
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+}
+
+.pelicula-principal .boton i {
+  margin-right: 1em;
+}
+
+/* ---- ---- ---- Media queries ---- ---- ---- */
